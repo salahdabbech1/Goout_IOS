@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zP5-97-3LZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9ym-Jo-2Lk">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -202,7 +202,7 @@
             </objects>
             <point key="canvasLocation" x="1002.8985507246377" y="478.79464285714283"/>
         </scene>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="G0y-0J-O2J">
             <objects>
                 <viewController id="Nn3-c1-leQ" sceneMemberID="viewController">
@@ -212,7 +212,7 @@
                         <viewLayoutGuide key="safeArea" id="JS8-OO-JXW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="hgu-bT-LXn"/>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="hgu-bT-LXn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WIa-tw-hKT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
