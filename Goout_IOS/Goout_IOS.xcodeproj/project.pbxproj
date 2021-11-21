@@ -15,6 +15,12 @@
 		3C7E9E08273E5E60009794EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E9E07273E5E60009794EE /* Assets.xcassets */; };
 		3C7E9E0B273E5E60009794EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E9E09273E5E60009794EE /* LaunchScreen.storyboard */; };
 		9E224361273EA43500130B63 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E224360273EA43500130B63 /* HealthKit.framework */; };
+		9E23D1992743AB1F00793867 /* trackingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23D1932743AB1F00793867 /* trackingPresenter.swift */; };
+		9E23D19A2743AB1F00793867 /* trackingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23D1942743AB1F00793867 /* trackingWorker.swift */; };
+		9E23D19B2743AB1F00793867 /* trackingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23D1952743AB1F00793867 /* trackingRouter.swift */; };
+		9E23D19C2743AB1F00793867 /* trackingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23D1962743AB1F00793867 /* trackingModels.swift */; };
+		9E23D19D2743AB1F00793867 /* trackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23D1972743AB1F00793867 /* trackingViewController.swift */; };
+		9E23D19E2743AB1F00793867 /* trackingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23D1982743AB1F00793867 /* trackingInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +35,12 @@
 		3C7E9E0C273E5E60009794EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E22435E273EA43500130B63 /* Goout_IOSDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Goout_IOSDebug.entitlements; sourceTree = "<group>"; };
 		9E224360273EA43500130B63 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		9E23D1932743AB1F00793867 /* trackingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackingPresenter.swift; sourceTree = "<group>"; };
+		9E23D1942743AB1F00793867 /* trackingWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackingWorker.swift; sourceTree = "<group>"; };
+		9E23D1952743AB1F00793867 /* trackingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackingRouter.swift; sourceTree = "<group>"; };
+		9E23D1962743AB1F00793867 /* trackingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackingModels.swift; sourceTree = "<group>"; };
+		9E23D1972743AB1F00793867 /* trackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackingViewController.swift; sourceTree = "<group>"; };
+		9E23D1982743AB1F00793867 /* trackingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackingInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +103,12 @@
 		9E22436A273EB2D300130B63 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				9E23D1932743AB1F00793867 /* trackingPresenter.swift */,
+				9E23D1942743AB1F00793867 /* trackingWorker.swift */,
+				9E23D1952743AB1F00793867 /* trackingRouter.swift */,
+				9E23D1962743AB1F00793867 /* trackingModels.swift */,
+				9E23D1972743AB1F00793867 /* trackingViewController.swift */,
+				9E23D1982743AB1F00793867 /* trackingInteractor.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -188,9 +206,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C7E9E00273E5E58009794EE /* ViewController.swift in Sources */,
+				9E23D19D2743AB1F00793867 /* trackingViewController.swift in Sources */,
+				9E23D1992743AB1F00793867 /* trackingPresenter.swift in Sources */,
+				9E23D19B2743AB1F00793867 /* trackingRouter.swift in Sources */,
 				3C7E9DFC273E5E58009794EE /* AppDelegate.swift in Sources */,
 				3C7E9E06273E5E58009794EE /* Goout_IOS.xcdatamodeld in Sources */,
+				9E23D19A2743AB1F00793867 /* trackingWorker.swift in Sources */,
+				9E23D19C2743AB1F00793867 /* trackingModels.swift in Sources */,
 				3C7E9DFE273E5E58009794EE /* SceneDelegate.swift in Sources */,
+				9E23D19E2743AB1F00793867 /* trackingInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
