@@ -5,3 +5,6 @@ this is parents IOS application containing all the kids info working inrealtime
 Salah Dabbech & Sabrine dachraoui
 # Dependencies 
 Alamofire --v 
+# Architecture
+MvvM
+
