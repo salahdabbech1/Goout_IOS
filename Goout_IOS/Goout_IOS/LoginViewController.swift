@@ -6,6 +6,9 @@
 //
 
 import UIKit
+//var
+
+//iboutlet
 
 class LoginViewController: UIViewController {
 

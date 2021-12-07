@@ -8,7 +8,7 @@
 import Foundation
 
 struct Parent: Encodable {
-    internal init(_id: String? = nil, Name: String? = nil, Last_Name: String? = nil, Email: String? = nil, Password: String? = nil, Picture: String? = nil) {
+    internal init(_id: String? = nil, Name: String? = nil, Last_Name: String? = nil, Email: String? = nil, Password: String? = nil, Picture: String? = nil, Role? = nil) {
         self._id = _id
         self.Name = Name
         self.Last_Name = Last_Name
@@ -24,4 +24,6 @@ struct Parent: Encodable {
     var Email  : String?
     var Password : String?
     var Picture : String?
+    var Role: String?
+    
 }

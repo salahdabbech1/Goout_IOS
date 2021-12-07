@@ -6,24 +6,37 @@
 //
 
 import UIKit
-
 class RegistreParentViewController: UIViewController {
-
+    //var
+    var Parent: Parent()
+    var name String?
+    var last_name: String?
+    var password: String?
+    var picture: String?
+    //Iboutlet
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var lastnameField: UITextField!
+    
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
+    
+    @IBOutlet weak var confirmField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-    
+    //methods
+    func makeAlert(titre: String?, message: String?) {
+           let alert = UIAlertController(title: titre, message: message, preferredStyle: .alert)
+           let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+           alert.addAction(action)
+           self.present(alert, animated: true)
+       }
+    //IBfunction
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func RegisterParent(_ sender: Any) {
     }
-    */
-
+    
 }
