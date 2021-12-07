@@ -1,0 +1,6 @@
+framework module Pods_Goout_IOS {
+  umbrella header "Pods-Goout_IOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

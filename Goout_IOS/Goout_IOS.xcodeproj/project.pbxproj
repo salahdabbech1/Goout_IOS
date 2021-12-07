@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2374D0DB2E58573C7AB46D0B /* Pods_Goout_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5E6CBE471D2ABF95140A2C /* Pods_Goout_IOS.framework */; };
 		3C7E9DFC273E5E58009794EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7E9DFB273E5E58009794EE /* AppDelegate.swift */; };
 		3C7E9DFE273E5E58009794EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7E9DFD273E5E58009794EE /* SceneDelegate.swift */; };
 		3C7E9E00273E5E58009794EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7E9DFF273E5E58009794EE /* ViewController.swift */; };
@@ -15,12 +16,22 @@
 		3C7E9E08273E5E60009794EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E9E07273E5E60009794EE /* Assets.xcassets */; };
 		3C7E9E0B273E5E60009794EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E9E09273E5E60009794EE /* LaunchScreen.storyboard */; };
 		9E224361273EA43500130B63 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E224360273EA43500130B63 /* HealthKit.framework */; };
-		9E23D1992743AB1F00793867 /* trackingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23D1932743AB1F00793867 /* trackingPresenter.swift */; };
-		9E23D19A2743AB1F00793867 /* trackingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23D1942743AB1F00793867 /* trackingWorker.swift */; };
-		9E23D19B2743AB1F00793867 /* trackingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23D1952743AB1F00793867 /* trackingRouter.swift */; };
-		9E23D19C2743AB1F00793867 /* trackingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23D1962743AB1F00793867 /* trackingModels.swift */; };
-		9E23D19D2743AB1F00793867 /* trackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23D1972743AB1F00793867 /* trackingViewController.swift */; };
-		9E23D19E2743AB1F00793867 /* trackingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23D1982743AB1F00793867 /* trackingInteractor.swift */; };
+		9E6A7E952750E9260062AF1F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A7E942750E9260062AF1F /* LoginViewModel.swift */; };
+		9E6A7E972750E93C0062AF1F /* RegisterParentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A7E962750E93C0062AF1F /* RegisterParentViewModel.swift */; };
+		9E6A7E992750E9550062AF1F /* RegisterKidViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A7E982750E9550062AF1F /* RegisterKidViewModel.swift */; };
+		9EAB376E274F845900CEFA04 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB376D274F845900CEFA04 /* TrackingViewController.swift */; };
+		9EAB3774274F86A200CEFA04 /* ProgressTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB3773274F86A200CEFA04 /* ProgressTableViewController.swift */; };
+		9EAB3776274F86DB00CEFA04 /* ActivitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB3775274F86DB00CEFA04 /* ActivitiesTableViewController.swift */; };
+		9EAB3778274F870F00CEFA04 /* RegistreKidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB3777274F870F00CEFA04 /* RegistreKidViewController.swift */; };
+		9EAB377A274F876600CEFA04 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB3779274F876600CEFA04 /* InfoViewController.swift */; };
+		9EAB377C274F877A00CEFA04 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB377B274F877A00CEFA04 /* LoginViewController.swift */; };
+		9EAB377E274F878F00CEFA04 /* RegistreParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB377D274F878F00CEFA04 /* RegistreParentViewController.swift */; };
+		9EAB3784274F87F200CEFA04 /* HealthCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB3783274F87F200CEFA04 /* HealthCollectionViewController.swift */; };
+		9EAB3786274F882A00CEFA04 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB3785274F882A00CEFA04 /* SettingsViewController.swift */; };
+		9EAB3788274F885700CEFA04 /* KidsActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB3787274F885700CEFA04 /* KidsActivityViewController.swift */; };
+		9EAB378A274F93A900CEFA04 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB3789274F93A900CEFA04 /* AddTaskViewController.swift */; };
+		E4C1278E2754FBC80014E342 /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C1278D2754FBC80014E342 /* Parent.swift */; };
+		E4C127902755061A0014E342 /* Kids.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C1278F275506190014E342 /* Kids.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,12 +46,25 @@
 		3C7E9E0C273E5E60009794EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E22435E273EA43500130B63 /* Goout_IOSDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Goout_IOSDebug.entitlements; sourceTree = "<group>"; };
 		9E224360273EA43500130B63 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
-		9E23D1932743AB1F00793867 /* trackingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackingPresenter.swift; sourceTree = "<group>"; };
-		9E23D1942743AB1F00793867 /* trackingWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackingWorker.swift; sourceTree = "<group>"; };
-		9E23D1952743AB1F00793867 /* trackingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackingRouter.swift; sourceTree = "<group>"; };
-		9E23D1962743AB1F00793867 /* trackingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackingModels.swift; sourceTree = "<group>"; };
-		9E23D1972743AB1F00793867 /* trackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackingViewController.swift; sourceTree = "<group>"; };
-		9E23D1982743AB1F00793867 /* trackingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackingInteractor.swift; sourceTree = "<group>"; };
+		9E6A7E942750E9260062AF1F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		9E6A7E962750E93C0062AF1F /* RegisterParentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterParentViewModel.swift; sourceTree = "<group>"; };
+		9E6A7E982750E9550062AF1F /* RegisterKidViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterKidViewModel.swift; sourceTree = "<group>"; };
+		9EAB376D274F845900CEFA04 /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
+		9EAB3773274F86A200CEFA04 /* ProgressTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableViewController.swift; sourceTree = "<group>"; };
+		9EAB3775274F86DB00CEFA04 /* ActivitiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewController.swift; sourceTree = "<group>"; };
+		9EAB3777274F870F00CEFA04 /* RegistreKidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistreKidViewController.swift; sourceTree = "<group>"; };
+		9EAB3779274F876600CEFA04 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = Goout_IOS/InfoViewController.swift; sourceTree = SOURCE_ROOT; };
+		9EAB377B274F877A00CEFA04 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Goout_IOS/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		9EAB377D274F878F00CEFA04 /* RegistreParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistreParentViewController.swift; sourceTree = "<group>"; };
+		9EAB3783274F87F200CEFA04 /* HealthCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthCollectionViewController.swift; path = Goout_IOS/HealthCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
+		9EAB3785274F882A00CEFA04 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9EAB3787274F885700CEFA04 /* KidsActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KidsActivityViewController.swift; path = Goout_IOS/KidsActivityViewController.swift; sourceTree = SOURCE_ROOT; };
+		9EAB3789274F93A900CEFA04 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		BA5E6CBE471D2ABF95140A2C /* Pods_Goout_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goout_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9BDD1AFE94BDD8B70EB8519 /* Pods-Goout_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goout_IOS.debug.xcconfig"; path = "Target Support Files/Pods-Goout_IOS/Pods-Goout_IOS.debug.xcconfig"; sourceTree = "<group>"; };
+		CE118056C3CC0113B8318092 /* Pods-Goout_IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goout_IOS.release.xcconfig"; path = "Target Support Files/Pods-Goout_IOS/Pods-Goout_IOS.release.xcconfig"; sourceTree = "<group>"; };
+		E4C1278D2754FBC80014E342 /* Parent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
+		E4C1278F275506190014E342 /* Kids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kids.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E224361273EA43500130B63 /* HealthKit.framework in Frameworks */,
+				2374D0DB2E58573C7AB46D0B /* Pods_Goout_IOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +86,7 @@
 				3C7E9DFA273E5E58009794EE /* Goout_IOS */,
 				3C7E9DF9273E5E58009794EE /* Products */,
 				9E22435F273EA43500130B63 /* Frameworks */,
+				D50B769D4871C56BC3C5C3E2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,10 +101,9 @@
 		3C7E9DFA273E5E58009794EE /* Goout_IOS */ = {
 			isa = PBXGroup;
 			children = (
-				9E22436B273EB35700130B63 /* Models */,
-				9E22436D273EB3E800130B63 /* Workers */,
-				9E22436C273EB36700130B63 /* Services */,
-				9E22436A273EB2D300130B63 /* Scenes */,
+				9EAB376C274F819000CEFA04 /* ViewModels */,
+				9EAB376B274F817000CEFA04 /* Views */,
+				9EAB3769274F814D00CEFA04 /* Models */,
 				9E22435E273EA43500130B63 /* Goout_IOSDebug.entitlements */,
 				3C7E9DFB273E5E58009794EE /* AppDelegate.swift */,
 				3C7E9DFD273E5E58009794EE /* SceneDelegate.swift */,
@@ -96,42 +121,56 @@
 			isa = PBXGroup;
 			children = (
 				9E224360273EA43500130B63 /* HealthKit.framework */,
+				BA5E6CBE471D2ABF95140A2C /* Pods_Goout_IOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9E22436A273EB2D300130B63 /* Scenes */ = {
+		9EAB3769274F814D00CEFA04 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9E23D1932743AB1F00793867 /* trackingPresenter.swift */,
-				9E23D1942743AB1F00793867 /* trackingWorker.swift */,
-				9E23D1952743AB1F00793867 /* trackingRouter.swift */,
-				9E23D1962743AB1F00793867 /* trackingModels.swift */,
-				9E23D1972743AB1F00793867 /* trackingViewController.swift */,
-				9E23D1982743AB1F00793867 /* trackingInteractor.swift */,
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
-		9E22436B273EB35700130B63 /* Models */ = {
-			isa = PBXGroup;
-			children = (
+				E4C1278D2754FBC80014E342 /* Parent.swift */,
+				E4C1278F275506190014E342 /* Kids.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		9E22436C273EB36700130B63 /* Services */ = {
+		9EAB376B274F817000CEFA04 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9EAB3787274F885700CEFA04 /* KidsActivityViewController.swift */,
+				9EAB3783274F87F200CEFA04 /* HealthCollectionViewController.swift */,
+				9EAB3785274F882A00CEFA04 /* SettingsViewController.swift */,
+				9EAB377B274F877A00CEFA04 /* LoginViewController.swift */,
+				9EAB377D274F878F00CEFA04 /* RegistreParentViewController.swift */,
+				9EAB3779274F876600CEFA04 /* InfoViewController.swift */,
+				9EAB376D274F845900CEFA04 /* TrackingViewController.swift */,
+				9EAB3773274F86A200CEFA04 /* ProgressTableViewController.swift */,
+				9EAB3775274F86DB00CEFA04 /* ActivitiesTableViewController.swift */,
+				9EAB3777274F870F00CEFA04 /* RegistreKidViewController.swift */,
+				9EAB3789274F93A900CEFA04 /* AddTaskViewController.swift */,
 			);
-			path = Services;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		9E22436D273EB3E800130B63 /* Workers */ = {
+		9EAB376C274F819000CEFA04 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				9E6A7E942750E9260062AF1F /* LoginViewModel.swift */,
+				9E6A7E962750E93C0062AF1F /* RegisterParentViewModel.swift */,
+				9E6A7E982750E9550062AF1F /* RegisterKidViewModel.swift */,
 			);
-			path = Workers;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D50B769D4871C56BC3C5C3E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9BDD1AFE94BDD8B70EB8519 /* Pods-Goout_IOS.debug.xcconfig */,
+				CE118056C3CC0113B8318092 /* Pods-Goout_IOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C7E9E0F273E5E60009794EE /* Build configuration list for PBXNativeTarget "Goout_IOS" */;
 			buildPhases = (
+				C2AD53D36446A2DB3EA79414 /* [CP] Check Pods Manifest.lock */,
 				3C7E9DF4273E5E58009794EE /* Sources */,
 				3C7E9DF5273E5E58009794EE /* Frameworks */,
 				3C7E9DF6273E5E58009794EE /* Resources */,
+				206F4DD3660003DB2422A00D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,21 +241,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		206F4DD3660003DB2422A00D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goout_IOS/Pods-Goout_IOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goout_IOS/Pods-Goout_IOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Goout_IOS/Pods-Goout_IOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2AD53D36446A2DB3EA79414 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Goout_IOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3C7E9DF4273E5E58009794EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4C127902755061A0014E342 /* Kids.swift in Sources */,
+				9EAB3788274F885700CEFA04 /* KidsActivityViewController.swift in Sources */,
+				9EAB3776274F86DB00CEFA04 /* ActivitiesTableViewController.swift in Sources */,
+				9E6A7E992750E9550062AF1F /* RegisterKidViewModel.swift in Sources */,
+				9EAB376E274F845900CEFA04 /* TrackingViewController.swift in Sources */,
 				3C7E9E00273E5E58009794EE /* ViewController.swift in Sources */,
-				9E23D19D2743AB1F00793867 /* trackingViewController.swift in Sources */,
-				9E23D1992743AB1F00793867 /* trackingPresenter.swift in Sources */,
-				9E23D19B2743AB1F00793867 /* trackingRouter.swift in Sources */,
+				9E6A7E952750E9260062AF1F /* LoginViewModel.swift in Sources */,
+				9EAB378A274F93A900CEFA04 /* AddTaskViewController.swift in Sources */,
+				9EAB3774274F86A200CEFA04 /* ProgressTableViewController.swift in Sources */,
+				9EAB3784274F87F200CEFA04 /* HealthCollectionViewController.swift in Sources */,
+				9EAB377A274F876600CEFA04 /* InfoViewController.swift in Sources */,
+				E4C1278E2754FBC80014E342 /* Parent.swift in Sources */,
 				3C7E9DFC273E5E58009794EE /* AppDelegate.swift in Sources */,
+				9EAB377E274F878F00CEFA04 /* RegistreParentViewController.swift in Sources */,
 				3C7E9E06273E5E58009794EE /* Goout_IOS.xcdatamodeld in Sources */,
-				9E23D19A2743AB1F00793867 /* trackingWorker.swift in Sources */,
-				9E23D19C2743AB1F00793867 /* trackingModels.swift in Sources */,
+				9EAB3778274F870F00CEFA04 /* RegistreKidViewController.swift in Sources */,
+				9EAB3786274F882A00CEFA04 /* SettingsViewController.swift in Sources */,
+				9E6A7E972750E93C0062AF1F /* RegisterParentViewModel.swift in Sources */,
+				9EAB377C274F877A00CEFA04 /* LoginViewController.swift in Sources */,
 				3C7E9DFE273E5E58009794EE /* SceneDelegate.swift in Sources */,
-				9E23D19E2743AB1F00793867 /* trackingInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +451,7 @@
 		};
 		3C7E9E10273E5E60009794EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9BDD1AFE94BDD8B70EB8519 /* Pods-Goout_IOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -386,6 +480,7 @@
 		};
 		3C7E9E11273E5E60009794EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE118056C3CC0113B8318092 /* Pods-Goout_IOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

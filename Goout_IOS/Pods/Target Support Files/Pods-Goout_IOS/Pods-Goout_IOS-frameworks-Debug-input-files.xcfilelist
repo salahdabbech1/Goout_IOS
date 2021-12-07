@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-Goout_IOS/Pods-Goout_IOS-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
