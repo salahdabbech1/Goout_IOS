@@ -31,7 +31,7 @@
 		9EAB3788274F885700CEFA04 /* KidsActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB3787274F885700CEFA04 /* KidsActivityViewController.swift */; };
 		9EAB378A274F93A900CEFA04 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB3789274F93A900CEFA04 /* AddTaskViewController.swift */; };
 		E4C1278E2754FBC80014E342 /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C1278D2754FBC80014E342 /* Parent.swift */; };
-		E4C127902755061A0014E342 /* Kids.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C1278F275506190014E342 /* Kids.swift */; };
+		E4C127902755061A0014E342 /* kid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C1278F275506190014E342 /* kid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,7 +64,7 @@
 		C9BDD1AFE94BDD8B70EB8519 /* Pods-Goout_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goout_IOS.debug.xcconfig"; path = "Target Support Files/Pods-Goout_IOS/Pods-Goout_IOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CE118056C3CC0113B8318092 /* Pods-Goout_IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goout_IOS.release.xcconfig"; path = "Target Support Files/Pods-Goout_IOS/Pods-Goout_IOS.release.xcconfig"; sourceTree = "<group>"; };
 		E4C1278D2754FBC80014E342 /* Parent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
-		E4C1278F275506190014E342 /* Kids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kids.swift; sourceTree = "<group>"; };
+		E4C1278F275506190014E342 /* kid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				E4C1278D2754FBC80014E342 /* Parent.swift */,
-				E4C1278F275506190014E342 /* Kids.swift */,
+				E4C1278F275506190014E342 /* kid.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -169,7 +169,6 @@
 				C9BDD1AFE94BDD8B70EB8519 /* Pods-Goout_IOS.debug.xcconfig */,
 				CE118056C3CC0113B8318092 /* Pods-Goout_IOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -288,7 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4C127902755061A0014E342 /* Kids.swift in Sources */,
+				E4C127902755061A0014E342 /* kid.swift in Sources */,
 				9EAB3788274F885700CEFA04 /* KidsActivityViewController.swift in Sources */,
 				9EAB3776274F86DB00CEFA04 /* ActivitiesTableViewController.swift in Sources */,
 				9E6A7E992750E9550062AF1F /* RegisterKidViewModel.swift in Sources */,

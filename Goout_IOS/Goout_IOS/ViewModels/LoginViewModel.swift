@@ -9,13 +9,15 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 import UIKit.UIImage
+import Darwin
+import CloudKit
 
 class LoginViewModel: ObservableObject{
     
     
     
     func Signin(Email: String, Password: String, completed: @escaping (Bool, Any?) -> Void) {
-        AF.request("http://localhost:3000/Parent/Signin",
+        AF.request("http://localhost:3000/Parent/Login",
                    method: .post,
                    parameters: ["Email": Email, "Password": Password])
             .validate(statusCode: 200..<300)
@@ -37,20 +39,16 @@ class LoginViewModel: ObservableObject{
     }
     
     func makeItem(jsonItem: JSON) -> Parent {
-    /*      return Parent(
+         return Parent(
             _id: jsonItem["_id"].stringValue,
-            pseudo: jsonItem["pseudo"].stringValue,
-            email: jsonItem["email"].stringValue,
-            mdp: jsonItem["mdp"].stringValue,
-            nom: jsonItem["nom"].stringValue,
-            prenom: jsonItem["prenom"].stringValue,
-            dateNaissance: date,
-            idPhoto: jsonItem["idPhoto"].stringValue,
-            sexe: jsonItem["sexe"].boolValue,
-            score: jsonItem["score"].intValue,
-            bio: jsonItem["bio"].stringValue,
-            isVerified: jsonItem["isVerified"].boolValue
+            Name: jsonItem["Name"].stringValue,
+            Last_Name: jsonItem["Last_name"].stringValue,
+            Email: jsonItem["Email"].stringValue,
+            Password: jsonItem["Password"].stringValue,
+            Picture: jsonItem["Picture"].stringValue,
+            Role: jsonItem["role"].stringValue
+            
         )
-    }*/
+    
 }
-
+}

@@ -6,13 +6,11 @@
 //
 
 import UIKit
+import Foundation
 class RegistreParentViewController: UIViewController {
     //var
-    var Parent: Parent()
-    var name String?
-    var last_name: String?
-    var password: String?
-    var picture: String?
+    var theparent = Parent()
+    var registerviewmodel = RegisterParentViewModel()
     //Iboutlet
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var lastnameField: UITextField!
@@ -37,6 +35,21 @@ class RegistreParentViewController: UIViewController {
     //IBfunction
 
     @IBAction func RegisterParent(_ sender: Any) {
-    }
+        theparent.Name = nameField.text
+        theparent.Last_Name = lastnameField.text
+        theparent.Password = passwordField.text
+        theparent.Email = emailField.text
+        registerviewmodel.RegisterParent(Parent: theparent) { (success) in
+            if success {
+                           
+                           let alert = UIAlertController(title: "Succes", message: "account created, weclome!", preferredStyle: .alert)
+                           self.present(alert, animated: true)
+                            
+                       } else {
+                           print("probleme here")
+                       }
+        }
+        
     
+}
 }

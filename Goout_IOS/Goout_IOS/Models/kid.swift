@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct Kids:  Hashable, Codable {
+struct kid:  Hashable, Codable {
 
     var _id : String?
     var Name : String?

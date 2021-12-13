@@ -7,17 +7,16 @@
 
 import UIKit
 import Alamofire
-class RegisterParentViewController: UIViewController {
+class RegisterParentViewModel: UIViewController {
     func RegisterParent(Parent: Parent, completed: @escaping (Bool) -> Void) {
-        AF.request("http://localhost:3000/api/Parent/RegisterParent",
+        AF.request("http://localhost:3000/Parent/RegisterParent",
                    method: .post,
                    parameters: [
                     "Name": Parent.Name!,
                     "Last_Name": Parent.Last_Name!,
                     "Email": Parent.Email!,
                     "Password": Parent.Password!,
-                    "Picture": Parent.Picture
-                   ])
+                   ],encoding: JSONEncoding.default)
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json"])
             .responseData { response in
