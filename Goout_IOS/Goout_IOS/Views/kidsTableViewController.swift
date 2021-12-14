@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProgressTableViewController: UITableViewController {
+class kidsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

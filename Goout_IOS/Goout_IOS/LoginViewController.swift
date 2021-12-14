@@ -11,7 +11,10 @@ import UIKit
 //iboutlet
 
 class LoginViewController: UIViewController {
-
+        var theparent = Parent()
+        var login = LoginViewModel()
+    @IBOutlet weak var emailtext: UITextField!
+    @IBOutlet weak var passwordtext: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,14 +26,22 @@ class LoginViewController: UIViewController {
     
     @IBAction func ResetPass(_ sender: Any) {
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func makeAlert(titre: String?, message: String?) {
+           let alert = UIAlertController(title: titre, message: message, preferredStyle: .alert)
+           let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+           alert.addAction(action)
+           self.present(alert, animated: true)
+       }
+    @IBAction func Signin(_ sender: Any) {
+        login.Signin(Email: emailtext.text!, Password: passwordtext.text!) {(success, reponse) in
+            if success {
+                self.theparent = reponse as! Parent
+                print(self.theparent)
+            } else {
+                let alert = UIAlertController(title: "error", message: "error occured", preferredStyle: .alert)
+                self.present(alert, animated: true)
+            }
+        }
     }
-    */
-
+    
 }

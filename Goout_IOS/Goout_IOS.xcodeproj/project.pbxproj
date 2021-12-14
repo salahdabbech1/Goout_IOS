@@ -15,12 +15,13 @@
 		3C7E9E06273E5E58009794EE /* Goout_IOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C7E9E04273E5E58009794EE /* Goout_IOS.xcdatamodeld */; };
 		3C7E9E08273E5E60009794EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E9E07273E5E60009794EE /* Assets.xcassets */; };
 		3C7E9E0B273E5E60009794EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E9E09273E5E60009794EE /* LaunchScreen.storyboard */; };
+		4E936C2E276810C400A40F73 /* KidsViewModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E936C2D276810C400A40F73 /* KidsViewModelViewController.swift */; };
 		9E224361273EA43500130B63 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E224360273EA43500130B63 /* HealthKit.framework */; };
 		9E6A7E952750E9260062AF1F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A7E942750E9260062AF1F /* LoginViewModel.swift */; };
 		9E6A7E972750E93C0062AF1F /* RegisterParentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A7E962750E93C0062AF1F /* RegisterParentViewModel.swift */; };
 		9E6A7E992750E9550062AF1F /* RegisterKidViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A7E982750E9550062AF1F /* RegisterKidViewModel.swift */; };
 		9EAB376E274F845900CEFA04 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB376D274F845900CEFA04 /* TrackingViewController.swift */; };
-		9EAB3774274F86A200CEFA04 /* ProgressTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB3773274F86A200CEFA04 /* ProgressTableViewController.swift */; };
+		9EAB3774274F86A200CEFA04 /* kidsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB3773274F86A200CEFA04 /* kidsTableViewController.swift */; };
 		9EAB3776274F86DB00CEFA04 /* ActivitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB3775274F86DB00CEFA04 /* ActivitiesTableViewController.swift */; };
 		9EAB3778274F870F00CEFA04 /* RegistreKidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB3777274F870F00CEFA04 /* RegistreKidViewController.swift */; };
 		9EAB377A274F876600CEFA04 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB3779274F876600CEFA04 /* InfoViewController.swift */; };
@@ -44,13 +45,14 @@
 		3C7E9E07273E5E60009794EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C7E9E0A273E5E60009794EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C7E9E0C273E5E60009794EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E936C2D276810C400A40F73 /* KidsViewModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsViewModelViewController.swift; sourceTree = "<group>"; };
 		9E22435E273EA43500130B63 /* Goout_IOSDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Goout_IOSDebug.entitlements; sourceTree = "<group>"; };
 		9E224360273EA43500130B63 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		9E6A7E942750E9260062AF1F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		9E6A7E962750E93C0062AF1F /* RegisterParentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterParentViewModel.swift; sourceTree = "<group>"; };
 		9E6A7E982750E9550062AF1F /* RegisterKidViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterKidViewModel.swift; sourceTree = "<group>"; };
 		9EAB376D274F845900CEFA04 /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
-		9EAB3773274F86A200CEFA04 /* ProgressTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableViewController.swift; sourceTree = "<group>"; };
+		9EAB3773274F86A200CEFA04 /* kidsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kidsTableViewController.swift; sourceTree = "<group>"; };
 		9EAB3775274F86DB00CEFA04 /* ActivitiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewController.swift; sourceTree = "<group>"; };
 		9EAB3777274F870F00CEFA04 /* RegistreKidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistreKidViewController.swift; sourceTree = "<group>"; };
 		9EAB3779274F876600CEFA04 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = Goout_IOS/InfoViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -145,7 +147,7 @@
 				9EAB377D274F878F00CEFA04 /* RegistreParentViewController.swift */,
 				9EAB3779274F876600CEFA04 /* InfoViewController.swift */,
 				9EAB376D274F845900CEFA04 /* TrackingViewController.swift */,
-				9EAB3773274F86A200CEFA04 /* ProgressTableViewController.swift */,
+				9EAB3773274F86A200CEFA04 /* kidsTableViewController.swift */,
 				9EAB3775274F86DB00CEFA04 /* ActivitiesTableViewController.swift */,
 				9EAB3777274F870F00CEFA04 /* RegistreKidViewController.swift */,
 				9EAB3789274F93A900CEFA04 /* AddTaskViewController.swift */,
@@ -159,6 +161,7 @@
 				9E6A7E942750E9260062AF1F /* LoginViewModel.swift */,
 				9E6A7E962750E93C0062AF1F /* RegisterParentViewModel.swift */,
 				9E6A7E982750E9550062AF1F /* RegisterKidViewModel.swift */,
+				4E936C2D276810C400A40F73 /* KidsViewModelViewController.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -292,10 +295,11 @@
 				9EAB3776274F86DB00CEFA04 /* ActivitiesTableViewController.swift in Sources */,
 				9E6A7E992750E9550062AF1F /* RegisterKidViewModel.swift in Sources */,
 				9EAB376E274F845900CEFA04 /* TrackingViewController.swift in Sources */,
+				4E936C2E276810C400A40F73 /* KidsViewModelViewController.swift in Sources */,
 				3C7E9E00273E5E58009794EE /* ViewController.swift in Sources */,
 				9E6A7E952750E9260062AF1F /* LoginViewModel.swift in Sources */,
 				9EAB378A274F93A900CEFA04 /* AddTaskViewController.swift in Sources */,
-				9EAB3774274F86A200CEFA04 /* ProgressTableViewController.swift in Sources */,
+				9EAB3774274F86A200CEFA04 /* kidsTableViewController.swift in Sources */,
 				9EAB3784274F87F200CEFA04 /* HealthCollectionViewController.swift in Sources */,
 				9EAB377A274F876600CEFA04 /* InfoViewController.swift in Sources */,
 				E4C1278E2754FBC80014E342 /* Parent.swift in Sources */,
