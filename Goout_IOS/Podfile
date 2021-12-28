@@ -8,4 +8,6 @@ target 'Goout_IOS' do
 # Pods for Goout_IOS
  pod 'Alamofire' 
 pod 'SwiftyJSON', '~> 4.0'
+pod 'GoogleSignIn'
 end
+

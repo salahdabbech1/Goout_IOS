@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QG8-i0-Rwa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QG8-i0-Rwa">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -108,7 +108,6 @@
                                 <connections>
                                     <action selector="SignIn:" destination="QG8-i0-Rwa" eventType="touchUpInside" id="mXp-FK-BJa"/>
                                     <action selector="Signin:" destination="QG8-i0-Rwa" eventType="touchUpInside" id="8MI-xL-91H"/>
-                                    <segue destination="9ym-Jo-2Lk" kind="presentation" modalPresentationStyle="currentContext" id="9rU-JV-mFs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YI3-Lj-rlj">
@@ -158,6 +157,8 @@
                     <connections>
                         <outlet property="emailtext" destination="6E6-bD-WAu" id="jWf-2P-edv"/>
                         <outlet property="passwordtext" destination="DsS-OH-bjL" id="E45-W8-g7Y"/>
+                        <segue destination="9ym-Jo-2Lk" kind="presentation" identifier="ParentsigninSegue" modalPresentationStyle="fullScreen" id="PvH-Is-LGg"/>
+                        <segue destination="MUt-h3-ga2" kind="presentation" identifier="KidsigninSegue" modalPresentationStyle="fullScreen" id="fxQ-zj-Pjt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ycm-e5-Xbv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -228,7 +229,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="RegisterParent:" destination="GcV-a0-hpF" eventType="touchUpInside" id="CYT-Le-2ln"/>
-                                    <segue destination="9ym-Jo-2Lk" kind="presentation" modalPresentationStyle="fullScreen" id="az2-Ww-2qn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -242,6 +242,7 @@
                         <outlet property="lastnameField" destination="CJj-yd-Fb3" id="ITS-qo-P0d"/>
                         <outlet property="nameField" destination="02m-Fu-D4q" id="yGd-DK-ecv"/>
                         <outlet property="passwordField" destination="9Iw-hc-xhw" id="6OG-Vs-2FZ"/>
+                        <segue destination="9ym-Jo-2Lk" kind="presentation" modalPresentationStyle="fullScreen" id="h79-Ne-OdQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7W5-fh-SmJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -621,20 +622,16 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uY7-Cf-Fju">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uY7-Cf-Fju">
                                 <rect key="frame" x="20" y="70" width="76" height="20.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20.5" id="KFb-v6-rZ6"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fx4-2x-NXX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fx4-2x-NXX">
                                 <rect key="frame" x="20" y="289.5" width="374" height="38.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38.5" id="AQH-fC-leu"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -690,7 +687,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9rU-JV-mFs"/>
+        <segue reference="PvH-Is-LGg"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name=" Logo" width="250" height="250"/>

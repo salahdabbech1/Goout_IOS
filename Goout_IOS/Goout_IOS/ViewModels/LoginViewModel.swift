@@ -20,7 +20,7 @@ class LoginViewModel: ObservableObject{
         AF.request("http://localhost:3000/Parent/Login",
                    method: .post,
                    parameters: ["Email": Email, "Password": Password], encoding: JSONEncoding.default)
-            .validate(statusCode: 200..<300)
+            .validate(statusCode: 200..<500)
             .validate(contentType: ["application/json"])
             .responseData { response in
                 switch response.result {
@@ -28,8 +28,8 @@ class LoginViewModel: ObservableObject{
                     let jsonData = JSON(response.data!)
                     let parent = self.makeItem(jsonItem: jsonData["Parent"])
                     UserDefaults.standard.setValue(jsonData["token"].stringValue, forKey: "tokenConnexion")
+                    UserDefaults.standard.setValue(parent._id, forKey: "idParent")
                     print(parent)
-                    
                     completed(true, parent)
                 case let .failure(error):
                     debugPrint(error)
@@ -39,6 +39,10 @@ class LoginViewModel: ObservableObject{
     }
     
     func makeItem(jsonItem: JSON) -> Parent {
+        var Kids: [kid] = []
+                for i in jsonItem["Kids"] {
+                    Kids.append(makekid(jsonItem: i.1))
+                }
         return Parent(
             _id: jsonItem["_id"].stringValue,
             Name: jsonItem["Name"].stringValue,
@@ -46,9 +50,14 @@ class LoginViewModel: ObservableObject{
             Email: jsonItem["Email"].stringValue,
             Password: jsonItem["Password"].stringValue,
             Picture: jsonItem["Picture"].stringValue,
-            Role: jsonItem["role"].stringValue
+            Role: jsonItem["role"].stringValue,
+            Kids: Kids
         )
         
         }
-
+    func makekid(jsonItem: JSON) -> kid {
+        kid(
+            _id: jsonItem["_id"].stringValue
+        )
+    }
 }
