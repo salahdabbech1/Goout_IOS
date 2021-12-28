@@ -150,12 +150,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P0g-eR-grh">
+                                <rect key="frame" x="20" y="807" width="178" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="x0O-Sh-pBn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="emailtext" destination="6E6-bD-WAu" id="jWf-2P-edv"/>
+                        <outlet property="googleStakView" destination="P0g-eR-grh" id="ONa-bO-ukr"/>
                         <outlet property="passwordtext" destination="DsS-OH-bjL" id="E45-W8-g7Y"/>
                         <segue destination="9ym-Jo-2Lk" kind="presentation" identifier="ParentsigninSegue" modalPresentationStyle="fullScreen" id="PvH-Is-LGg"/>
                         <segue destination="MUt-h3-ga2" kind="presentation" identifier="KidsigninSegue" modalPresentationStyle="fullScreen" id="fxQ-zj-Pjt"/>

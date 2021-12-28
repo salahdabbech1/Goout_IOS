@@ -7,6 +7,7 @@
 
 import UIKit
 import GoogleSignIn
+
 //var
 
 //iboutlet
@@ -15,11 +16,14 @@ class LoginViewController: UIViewController {
         var theparent = Parent()
         var login = LoginViewModel()
     let signInConfig = GIDConfiguration.init(clientID: "916408359674-444aoaf8o8mjg69ujus6io0kadlcoeht.apps.googleusercontent.com")
-    let googleLoginButton = GIDSignInButton()
+        let googleLoginButton = GIDSignInButton()
     @IBOutlet weak var emailtext: UITextField!
     @IBOutlet weak var passwordtext: UITextField!
+    @IBOutlet weak var googleStakView: UIStackView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        googleStakView.addSubview(googleLoginButton)
+                googleLoginButton.addTarget(self, action: #selector(googleSignIn), for: .touchUpInside)
 
         // Do any additional setup after loading the view.
     }
@@ -47,5 +51,31 @@ class LoginViewController: UIViewController {
             }
         }
     }
+    @objc func googleSignIn() {
+            
+            
+            GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self) { [self] user, error in
+                guard error == nil else { return }
+                guard let user = user else { return }
+                
+                let email = user.profile?.email
+                let name = (user.profile?.givenName)! + " " + (user.profile?.familyName)!
+                
+                loginWithSocialMedia(email: email, name: name, socialMediaName: "Google")
+            }
+        func loginWithSocialMedia(email: String?, name: String?,
+                                     socialMediaName: String) {
+               
+            LoginViewModel().loginWithSocialApp( Email :email! , Name :name!, completed: { success, user in
+                   if success {
+                       self.performSegue(withIdentifier: "ParentsigninSegue", sender: nil)
+                   } else {
+                       
+                   }
+                   
+               })
+           }
+    
+}
     
 }
