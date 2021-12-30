@@ -1,0 +1,168 @@
+
+/* Class = "UITextField"; placeholder = "Your name"; ObjectID = "02m-Fu-D4q"; */
+"02m-Fu-D4q.placeholder" = " nom";
+
+/* Class = "UILabel"; text = "New Here?"; ObjectID = "475-nZ-QYy"; */
+"475-nZ-QYy.text" = "Nouveau ici?";
+
+/* Class = "UIButton"; configuration.title = "SIGN IN"; ObjectID = "5ON-5w-HAl"; */
+"5ON-5w-HAl.configuration.title" = "SIGN IN";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "5ON-5w-HAl"; */
+"5ON-5w-HAl.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "6E6-bD-WAu"; */
+"6E6-bD-WAu.placeholder" = "Email";
+
+/* Class = "UIButton"; configuration.title = "Language"; ObjectID = "7QT-yR-eHY"; */
+"7QT-yR-eHY.configuration.title" = "Language";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7QT-yR-eHY"; */
+"7QT-yR-eHY.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Confirm password"; ObjectID = "7tu-4N-jhs"; */
+"7tu-4N-jhs.placeholder" = "Confirmez password";
+
+/* Class = "UILabel"; text = "Create a new Parent account"; ObjectID = "8GQ-Ui-Vo1"; */
+"8GQ-Ui-Vo1.text" = "Creez un nouveau compt parent";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "9Iw-hc-xhw"; */
+"9Iw-hc-xhw.placeholder" = "Password";
+
+/* Class = "UIButton"; configuration.title = "Register"; ObjectID = "Ani-dt-9rY"; */
+"Ani-dt-9rY.configuration.title" = "enregistrer";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ani-dt-9rY"; */
+"Ani-dt-9rY.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "BTa-G9-QKr"; */
+"BTa-G9-QKr.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "ADD"; ObjectID = "C4R-p7-1uR"; */
+"C4R-p7-1uR.configuration.title" = "ajouter";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "C4R-p7-1uR"; */
+"C4R-p7-1uR.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Your last name"; ObjectID = "CJj-yd-Fb3"; */
+"CJj-yd-Fb3.placeholder" = "prenom";
+
+/* Class = "UILabel"; text = "Add a new kid"; ObjectID = "D9T-qe-N2A"; */
+"D9T-qe-N2A.text" = "ajoutez un enfant";
+
+/* Class = "UINavigationItem"; title = "Kids Progress"; ObjectID = "DXs-KC-QDx"; */
+"DXs-KC-QDx.title" = "progrez des enfants";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "DsS-OH-bjL"; */
+"DsS-OH-bjL.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "GtW-yA-7Jc"; */
+"GtW-yA-7Jc.placeholder" = "Password";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "I32-9K-jph"; */
+"I32-9K-jph.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "Register Parent"; ObjectID = "Lne-cS-fEG"; */
+"Lne-cS-fEG.text" = "Enreistrer Parent";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "NJV-c7-DTt"; */
+"NJV-c7-DTt.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Email adress"; ObjectID = "RbG-oy-aVW"; */
+"RbG-oy-aVW.placeholder" = "Email ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "UfX-7e-yBO"; */
+"UfX-7e-yBO.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "WJS-fR-Gy8"; */
+"WJS-fR-Gy8.title" = "Settings";
+
+/* Class = "UIButton"; configuration.title = "Forgot Password?"; ObjectID = "YI3-Lj-rlj"; */
+"YI3-Lj-rlj.configuration.title" = "oublier mot de pass?";
+
+/* Class = "UIButton"; configuration.title = "Account"; ObjectID = "bqv-jA-qm3"; */
+"bqv-jA-qm3.configuration.title" = "compt";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bqv-jA-qm3"; */
+"bqv-jA-qm3.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Appearance"; ObjectID = "c6T-fF-jbN"; */
+"c6T-fF-jbN.configuration.title" = "Apparence";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "c6T-fF-jbN"; */
+"c6T-fF-jbN.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Your last name"; ObjectID = "cg1-kt-6Fd"; */
+"cg1-kt-6Fd.placeholder" = "ton prenom";
+
+/* Class = "UITextField"; placeholder = "Email adress"; ObjectID = "d27-Sj-q8m"; */
+"d27-Sj-q8m.placeholder" = "Email ";
+
+/* Class = "UITextField"; placeholder = "Confirm password"; ObjectID = "e3d-X1-onb"; */
+"e3d-X1-onb.placeholder" = "Confirmez mot de pass";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "foh-ZL-aTA"; */
+"foh-ZL-aTA.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fx4-2x-NXX"; */
+"fx4-2x-NXX.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "fxS-O5-Fuz"; */
+"fxS-O5-Fuz.placeholder" = "mot de pass";
+
+/* Class = "UILabel"; text = "New kid"; ObjectID = "gcQ-9I-Tvb"; */
+"gcQ-9I-Tvb.text" = "nouvelle enfant";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "hV4-xR-FVS"; */
+"hV4-xR-FVS.placeholder" = "Nom";
+
+/* Class = "UIButton"; configuration.title = "Notifications"; ObjectID = "idV-gd-BMm"; */
+"idV-gd-BMm.configuration.title" = "Notifications";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "idV-gd-BMm"; */
+"idV-gd-BMm.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Resgister"; ObjectID = "lYd-a8-UJK"; */
+"lYd-a8-UJK.configuration.title" = "Enregister";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "lYd-a8-UJK"; */
+"lYd-a8-UJK.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "This is a sample title"; ObjectID = "pA8-u7-0Rz"; */
+"pA8-u7-0Rz.text" = "This is a sample title";
+
+/* Class = "UITextField"; placeholder = "Your name"; ObjectID = "pC0-UR-ifw"; */
+"pC0-UR-ifw.placeholder" = "Your name";
+
+/* Class = "UITabBarItem"; title = "Health"; ObjectID = "pbE-GS-GRu"; */
+"pbE-GS-GRu.title" = "Health";
+
+/* Class = "UIButton"; configuration.title = "Sound"; ObjectID = "qnA-cY-2cT"; */
+"qnA-cY-2cT.configuration.title" = "Sound";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qnA-cY-2cT"; */
+"qnA-cY-2cT.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Activites"; ObjectID = "sfb-ZB-GWa"; */
+"sfb-ZB-GWa.title" = "Activites";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "t0Z-KO-KmC"; */
+"t0Z-KO-KmC.text" = "Email";
+
+/* Class = "UIButton"; configuration.title = "New child"; ObjectID = "tF9-Fx-LDZ"; */
+"tF9-Fx-LDZ.configuration.title" = "New child";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "tF9-Fx-LDZ"; */
+"tF9-Fx-LDZ.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "uY7-Cf-Fju"; */
+"uY7-Cf-Fju.text" = "Settings";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "vhQ-AP-LfD"; */
+"vhQ-AP-LfD.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wOp-E8-drU"; */
+"wOp-E8-drU.text" = "Label";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "xIs-dp-hWi"; */
+"xIs-dp-hWi.text" = "Password";

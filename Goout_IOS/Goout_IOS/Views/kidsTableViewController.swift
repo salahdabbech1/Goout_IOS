@@ -8,7 +8,7 @@
 import UIKit
 
 class kidsTableViewController: UITableViewController {
-
+    var Kids : [kid] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,28 +18,44 @@ class kidsTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    override func viewDidAppear(_ animated: Bool) {
+        KidlistViewModel().GetKids { success, Kidsfromrep in
+            if success{self.Kids = Kidsfromrep!
+                self.tableView.reloadData()
+            }
+            else{print("alert")}
+        }
+        
+    }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return Kids.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "kidscell")
+        let cv = cell?.contentView
+        let name =  cv?.viewWithTag(2) as! UILabel
+        let progress = cv?.viewWithTag(3) as! UIProgressView
+                name.text = Kids[indexPath.row].Name
+        
+        
+        
+        
         // Configure the cell...
 
-        return cell
+        return cell!
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

@@ -36,7 +36,7 @@ class RegistreParentViewController: UIViewController {
 
     @IBAction func RegisterParent(_ sender: Any) {
         theparent.Name = nameField.text
-        theparent.Last_Name = lastnameField.text
+       
         theparent.Password = passwordField.text
         theparent.Email = emailField.text
         registerviewmodel.RegisterParent(Parent: theparent) { (success) in

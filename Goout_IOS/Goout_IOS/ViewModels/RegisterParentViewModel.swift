@@ -13,7 +13,7 @@ class RegisterParentViewModel: UIViewController {
                    method: .post,
                    parameters: [
                     "Name": Parent.Name!,
-                    "Last_Name": Parent.Last_Name!,
+                   
                     "Email": Parent.Email!,
                     "Password": Parent.Password!,
                    ],encoding: JSONEncoding.default)

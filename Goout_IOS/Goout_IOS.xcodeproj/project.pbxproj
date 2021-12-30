@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,10 @@
 		3C7E9E06273E5E58009794EE /* Goout_IOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C7E9E04273E5E58009794EE /* Goout_IOS.xcdatamodeld */; };
 		3C7E9E08273E5E60009794EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E9E07273E5E60009794EE /* Assets.xcassets */; };
 		3C7E9E0B273E5E60009794EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E9E09273E5E60009794EE /* LaunchScreen.storyboard */; };
-		4E936C2E276810C400A40F73 /* KidsViewModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E936C2D276810C400A40F73 /* KidsViewModelViewController.swift */; };
+		4E936C2E276810C400A40F73 /* KidlistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E936C2D276810C400A40F73 /* KidlistViewModel.swift */; };
+		4EF1C355277E48A300975CEF /* PassforgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1C354277E48A300975CEF /* PassforgetViewController.swift */; };
+		4EF1C357277E48C200975CEF /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1C356277E48C200975CEF /* ConfirmationViewController.swift */; };
+		4EF1C359277E48D200975CEF /* ChangePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1C358277E48D200975CEF /* ChangePassViewController.swift */; };
 		9E224361273EA43500130B63 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E224360273EA43500130B63 /* HealthKit.framework */; };
 		9E6A7E952750E9260062AF1F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A7E942750E9260062AF1F /* LoginViewModel.swift */; };
 		9E6A7E972750E93C0062AF1F /* RegisterParentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A7E962750E93C0062AF1F /* RegisterParentViewModel.swift */; };
@@ -45,7 +48,12 @@
 		3C7E9E07273E5E60009794EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C7E9E0A273E5E60009794EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C7E9E0C273E5E60009794EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E936C2D276810C400A40F73 /* KidsViewModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsViewModelViewController.swift; sourceTree = "<group>"; };
+		4E936C2D276810C400A40F73 /* KidlistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidlistViewModel.swift; sourceTree = "<group>"; };
+		4EEBD2D5277DE25000F313A7 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		4EEBD2D6277DE25000F313A7 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		4EF1C354277E48A300975CEF /* PassforgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassforgetViewController.swift; sourceTree = "<group>"; };
+		4EF1C356277E48C200975CEF /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		4EF1C358277E48D200975CEF /* ChangePassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassViewController.swift; sourceTree = "<group>"; };
 		9E22435E273EA43500130B63 /* Goout_IOSDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Goout_IOSDebug.entitlements; sourceTree = "<group>"; };
 		9E224360273EA43500130B63 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		9E6A7E942750E9260062AF1F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -151,6 +159,9 @@
 				9EAB3775274F86DB00CEFA04 /* ActivitiesTableViewController.swift */,
 				9EAB3777274F870F00CEFA04 /* RegistreKidViewController.swift */,
 				9EAB3789274F93A900CEFA04 /* AddTaskViewController.swift */,
+				4EF1C354277E48A300975CEF /* PassforgetViewController.swift */,
+				4EF1C356277E48C200975CEF /* ConfirmationViewController.swift */,
+				4EF1C358277E48D200975CEF /* ChangePassViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,7 +172,7 @@
 				9E6A7E942750E9260062AF1F /* LoginViewModel.swift */,
 				9E6A7E962750E93C0062AF1F /* RegisterParentViewModel.swift */,
 				9E6A7E982750E9550062AF1F /* RegisterKidViewModel.swift */,
-				4E936C2D276810C400A40F73 /* KidsViewModelViewController.swift */,
+				4E936C2D276810C400A40F73 /* KidlistViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -213,12 +224,13 @@
 				};
 			};
 			buildConfigurationList = 3C7E9DF3273E5E58009794EE /* Build configuration list for PBXProject "Goout_IOS" */;
-			compatibilityVersion = "Xcode 12.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 3C7E9DEF273E5E58009794EE;
 			productRefGroup = 3C7E9DF9273E5E58009794EE /* Products */;
@@ -294,8 +306,10 @@
 				9EAB3788274F885700CEFA04 /* KidsActivityViewController.swift in Sources */,
 				9EAB3776274F86DB00CEFA04 /* ActivitiesTableViewController.swift in Sources */,
 				9E6A7E992750E9550062AF1F /* RegisterKidViewModel.swift in Sources */,
+				4EF1C355277E48A300975CEF /* PassforgetViewController.swift in Sources */,
 				9EAB376E274F845900CEFA04 /* TrackingViewController.swift in Sources */,
-				4E936C2E276810C400A40F73 /* KidsViewModelViewController.swift in Sources */,
+				4E936C2E276810C400A40F73 /* KidlistViewModel.swift in Sources */,
+				4EF1C357277E48C200975CEF /* ConfirmationViewController.swift in Sources */,
 				3C7E9E00273E5E58009794EE /* ViewController.swift in Sources */,
 				9E6A7E952750E9260062AF1F /* LoginViewModel.swift in Sources */,
 				9EAB378A274F93A900CEFA04 /* AddTaskViewController.swift in Sources */,
@@ -309,6 +323,7 @@
 				9EAB3778274F870F00CEFA04 /* RegistreKidViewController.swift in Sources */,
 				9EAB3786274F882A00CEFA04 /* SettingsViewController.swift in Sources */,
 				9E6A7E972750E93C0062AF1F /* RegisterParentViewModel.swift in Sources */,
+				4EF1C359277E48D200975CEF /* ChangePassViewController.swift in Sources */,
 				9EAB377C274F877A00CEFA04 /* LoginViewController.swift in Sources */,
 				3C7E9DFE273E5E58009794EE /* SceneDelegate.swift in Sources */,
 			);
@@ -321,6 +336,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3C7E9E02273E5E58009794EE /* Base */,
+				4EEBD2D5277DE25000F313A7 /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -329,6 +345,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3C7E9E0A273E5E60009794EE /* Base */,
+				4EEBD2D6277DE25000F313A7 /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -340,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -401,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
