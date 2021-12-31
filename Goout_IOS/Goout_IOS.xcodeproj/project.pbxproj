@@ -19,6 +19,9 @@
 		4EF1C355277E48A300975CEF /* PassforgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1C354277E48A300975CEF /* PassforgetViewController.swift */; };
 		4EF1C357277E48C200975CEF /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1C356277E48C200975CEF /* ConfirmationViewController.swift */; };
 		4EF1C359277E48D200975CEF /* ChangePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1C358277E48D200975CEF /* ChangePassViewController.swift */; };
+		4EF1C35B277EF74D00975CEF /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1C35A277EF74D00975CEF /* TaskListViewController.swift */; };
+		4EF1C35D277EFC9C00975CEF /* TasklistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1C35C277EFC9C00975CEF /* TasklistViewModel.swift */; };
+		4EF1C35F277EFCC700975CEF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1C35E277EFCC700975CEF /* Task.swift */; };
 		9E224361273EA43500130B63 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E224360273EA43500130B63 /* HealthKit.framework */; };
 		9E6A7E952750E9260062AF1F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A7E942750E9260062AF1F /* LoginViewModel.swift */; };
 		9E6A7E972750E93C0062AF1F /* RegisterParentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A7E962750E93C0062AF1F /* RegisterParentViewModel.swift */; };
@@ -54,6 +57,9 @@
 		4EF1C354277E48A300975CEF /* PassforgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassforgetViewController.swift; sourceTree = "<group>"; };
 		4EF1C356277E48C200975CEF /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 		4EF1C358277E48D200975CEF /* ChangePassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassViewController.swift; sourceTree = "<group>"; };
+		4EF1C35A277EF74D00975CEF /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		4EF1C35C277EFC9C00975CEF /* TasklistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasklistViewModel.swift; sourceTree = "<group>"; };
+		4EF1C35E277EFCC700975CEF /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		9E22435E273EA43500130B63 /* Goout_IOSDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Goout_IOSDebug.entitlements; sourceTree = "<group>"; };
 		9E224360273EA43500130B63 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		9E6A7E942750E9260062AF1F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -141,6 +147,7 @@
 			children = (
 				E4C1278D2754FBC80014E342 /* Parent.swift */,
 				E4C1278F275506190014E342 /* kid.swift */,
+				4EF1C35E277EFCC700975CEF /* Task.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -162,6 +169,7 @@
 				4EF1C354277E48A300975CEF /* PassforgetViewController.swift */,
 				4EF1C356277E48C200975CEF /* ConfirmationViewController.swift */,
 				4EF1C358277E48D200975CEF /* ChangePassViewController.swift */,
+				4EF1C35A277EF74D00975CEF /* TaskListViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +181,7 @@
 				9E6A7E962750E93C0062AF1F /* RegisterParentViewModel.swift */,
 				9E6A7E982750E9550062AF1F /* RegisterKidViewModel.swift */,
 				4E936C2D276810C400A40F73 /* KidlistViewModel.swift */,
+				4EF1C35C277EFC9C00975CEF /* TasklistViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -317,14 +326,17 @@
 				9EAB3784274F87F200CEFA04 /* HealthCollectionViewController.swift in Sources */,
 				9EAB377A274F876600CEFA04 /* InfoViewController.swift in Sources */,
 				E4C1278E2754FBC80014E342 /* Parent.swift in Sources */,
+				4EF1C35D277EFC9C00975CEF /* TasklistViewModel.swift in Sources */,
 				3C7E9DFC273E5E58009794EE /* AppDelegate.swift in Sources */,
 				9EAB377E274F878F00CEFA04 /* RegistreParentViewController.swift in Sources */,
 				3C7E9E06273E5E58009794EE /* Goout_IOS.xcdatamodeld in Sources */,
 				9EAB3778274F870F00CEFA04 /* RegistreKidViewController.swift in Sources */,
+				4EF1C35B277EF74D00975CEF /* TaskListViewController.swift in Sources */,
 				9EAB3786274F882A00CEFA04 /* SettingsViewController.swift in Sources */,
 				9E6A7E972750E93C0062AF1F /* RegisterParentViewModel.swift in Sources */,
 				4EF1C359277E48D200975CEF /* ChangePassViewController.swift in Sources */,
 				9EAB377C274F877A00CEFA04 /* LoginViewController.swift in Sources */,
+				4EF1C35F277EFCC700975CEF /* Task.swift in Sources */,
 				3C7E9DFE273E5E58009794EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

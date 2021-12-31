@@ -13,7 +13,6 @@ class RegistreParentViewController: UIViewController {
     var registerviewmodel = RegisterParentViewModel()
     //Iboutlet
     @IBOutlet weak var nameField: UITextField!
-    @IBOutlet weak var lastnameField: UITextField!
     
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var emailField: UITextField!
@@ -40,13 +39,13 @@ class RegistreParentViewController: UIViewController {
         theparent.Password = passwordField.text
         theparent.Email = emailField.text
         registerviewmodel.RegisterParent(Parent: theparent) { (success) in
-            if success {
-                           
-                           let alert = UIAlertController(title: "Succes", message: "account created, weclome!", preferredStyle: .alert)
+            if success {    let alert = UIAlertController(title: "Succes", message: "account created, weclome!", preferredStyle: .alert)
+                            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+                            alert.addAction(action)
                            self.present(alert, animated: true)
                             
                        } else {
-                           print("probleme here")
+                           print("probleme at parent")
                        }
         }
         

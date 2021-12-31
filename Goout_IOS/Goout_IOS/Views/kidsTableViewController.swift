@@ -46,7 +46,7 @@ class kidsTableViewController: UITableViewController {
         let cv = cell?.contentView
         let name =  cv?.viewWithTag(2) as! UILabel
         let progress = cv?.viewWithTag(3) as! UIProgressView
-                name.text = Kids[indexPath.row].Name
+        name.text = Kids[indexPath.row].Name
         
         
         
@@ -55,7 +55,15 @@ class kidsTableViewController: UITableViewController {
 
         return cell!
     }
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "taskSegue", sender: indexPath)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "taskSegue"{
+        let index = sender as!IndexPath
+        let destination = segue.destination as! TaskListViewController
+            destination.Kidid = Kids[index.row]._id}
+    }
 
     /*
     // Override to support conditional editing of the table view.
