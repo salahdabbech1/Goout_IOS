@@ -11,6 +11,7 @@ class kidsTableViewController: UITableViewController {
     var Kids : [kid] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+      
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -23,7 +24,6 @@ class kidsTableViewController: UITableViewController {
             if success{self.Kids = Kidsfromrep!
                 self.tableView.reloadData()
             }
-            else{print("alert")}
         }
         
     }
@@ -111,3 +111,4 @@ class kidsTableViewController: UITableViewController {
     */
 
 }
+

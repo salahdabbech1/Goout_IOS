@@ -1,8 +1,8 @@
 //
-//  SettingsViewController.swift
+//  SettingsViewControllerViewController.swift
 //  Goout_IOS
 //
-//  Created by Salah_4sim2 on 25/11/2021.
+//  Created by SalahDabbech on 1/1/2022.
 //
 
 import UIKit
@@ -15,7 +15,19 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func theme(_ sender: UISwitch) {
+        if sender.isOn {
+            UIApplication.shared.windows.forEach { window in
+                window.overrideUserInterfaceStyle = .dark
+            }
+        } else {
+            UIApplication.shared.windows.forEach { window in
+                window.overrideUserInterfaceStyle = .light
+            }
+        }
+        
+    }
+    
     /*
     // MARK: - Navigation
 

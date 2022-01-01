@@ -13,11 +13,8 @@ import Darwin
 import CloudKit
 
 class LoginViewModel: ObservableObject{
-    
-    
-    
-    func Signin(Email: String, Password: String, completed: @escaping (Bool, Any?) -> Void) {
-        AF.request("http://localhost:3000/Parent/Login",
+    func SigninParent(Email: String, Password: String, completed: @escaping (Bool, Any?) -> Void) {
+        AF.request("http://localhost:3000/Parent/Loginparent",
                    method: .post,
                    parameters: ["Email": Email, "Password": Password], encoding: JSONEncoding.default)
             .validate(statusCode: 200..<300)
@@ -30,7 +27,7 @@ class LoginViewModel: ObservableObject{
                     let parent = self.makeItem(jsonItem: jsonData["Parent"])
                    
                     UserDefaults.standard.setValue(jsonData["token"].stringValue, forKey: "tokenConnexion")
-                    UserDefaults.standard.setValue(parent._id, forKey: "idParent")
+                    UserDefaults.standard.setValue(parent._id, forKey: "id")
                     UserDefaults.standard.setValue(parent.Role, forKey: "parentRole")
                     completed(true, parent)
                     print(parent)
@@ -40,6 +37,7 @@ class LoginViewModel: ObservableObject{
                 }
                
             };
+        
     }
     func loginWithSocialApp(Email: String, Name: String, completed: @escaping (Bool, Parent?) -> Void ) {
             AF.request("http://localhost:3000/Parent/LoginwithSocial",
@@ -56,7 +54,7 @@ class LoginViewModel: ObservableObject{
                         let parent = self.makeItem(jsonItem: jsonData["parent"])
                         print("this is the new token value : " + jsonData["token"].stringValue)
                         UserDefaults.standard.setValue(jsonData["token"].stringValue, forKey: "tokenConnexion")
-                        UserDefaults.standard.setValue(parent._id, forKey: "idParent")
+                        UserDefaults.standard.setValue(parent._id, forKey: "id")
                         completed(true, parent)
                     case let .failure(error):
                         debugPrint(error)
@@ -106,7 +104,6 @@ class LoginViewModel: ObservableObject{
                     Kids.append(makekid(jsonItem: i.1))
                     
                 }
-        //print("barcha sghar : " ,Kids)
         return Parent(
             _id: jsonItem["_id"].stringValue,
             Name: jsonItem["Name"].stringValue,

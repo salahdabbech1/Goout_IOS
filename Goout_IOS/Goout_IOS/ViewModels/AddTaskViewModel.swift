@@ -1,20 +1,20 @@
 //
-//  RegisterKidViewModel.swift
+//  AddTaskViewModel.swift
 //  Goout_IOS
 //
-//  Created by Salah_4sim2 on 26/11/2021.
+//  Created by SalahDabbech on 31/12/2021.
 //
 
 import UIKit
 import Alamofire
-class RegisterKidViewModel: UIViewController {
-    func RegisterKid(Kid: kid, completed: @escaping (Bool) -> Void) {
-        AF.request("http://localhost:3000/Parent/"+UserDefaults.standard.string(forKey: "id")!+"/RegisterKids",
+import SwiftyJSON
+class AddTaskViewModel: UIViewController {
+    func addTask(Task: task,Kidid:String?, completed: @escaping (Bool) -> Void) {
+        AF.request("http://localhost:3000/Parent/"+Kidid!+"/addtask",
                    method: .post,
                    parameters: [
-                    "Name": Kid.Name!,
-                    "Email": Kid.Email!,
-                    "Password": Kid.Password!,
+                    "Name": Task.Name!,
+                    "Description": Task.Description!
                    ],encoding: JSONEncoding.default)
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json"])
@@ -29,7 +29,6 @@ class RegisterKidViewModel: UIViewController {
                 }
             }
     }
-
     override func viewDidLoad() {
         super.viewDidLoad()
 

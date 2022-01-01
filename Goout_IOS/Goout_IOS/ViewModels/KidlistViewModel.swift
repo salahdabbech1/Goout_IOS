@@ -10,7 +10,7 @@ import SwiftyJSON
 import Alamofire
 class KidlistViewModel: UIViewController{
    func GetKids(completed: @escaping (Bool, [kid]?) -> Void){
-            AF.request("http://localhost:3000/Parent/"+UserDefaults.standard.string(forKey: "idParent")!+"/getkids",method: .get)
+       AF.request("http://localhost:3000/Parent/"+UserDefaults.standard.string(forKey: "id")!+"/getkids",method: .get)
                 .validate(statusCode: 200..<300)
                             .validate(contentType: ["application/json"])
                             .responseData { response in

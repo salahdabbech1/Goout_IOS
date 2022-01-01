@@ -29,6 +29,27 @@ class TasklistViewModel: UIViewController {
                                  }
                              }.resume()
                      }
+    func GetTasksKid(completed: @escaping (Bool, [task]?) -> Void){
+        AF.request("http://localhost:3000/Parent/"+UserDefaults.standard.string(forKey: "id")!+"/gettasks",method: .get)
+                 .validate(statusCode: 200..<300)
+                             .validate(contentType: ["application/json"])
+                             .responseData { response in
+                                 switch response.result {
+                                 case .success:
+                                     let jsonData = JSON(response.data!)
+                                     var Tasks : [task]? = []
+                                     for singleJsonItem in jsonData["Tasks"] {
+                                         Tasks!.append(self.makeItem(jsonItem: singleJsonItem.1))
+                                     }
+                                     
+                                     completed(true, Tasks)
+                                 case let .failure(error):
+                                     debugPrint(error)
+                                     completed(false, nil)
+                                 }
+                             }.resume()
+                     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

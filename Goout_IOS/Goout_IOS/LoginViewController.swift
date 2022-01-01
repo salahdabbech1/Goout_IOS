@@ -14,6 +14,7 @@ import GoogleSignIn
 
 class LoginViewController: UIViewController {
     var theparent = Parent()
+    var thekid = kid()
     var login = LoginViewModel()
     let signInConfig = GIDConfiguration.init(clientID: "916408359674-444aoaf8o8mjg69ujus6io0kadlcoeht.apps.googleusercontent.com")
     let googleLoginButton = GIDSignInButton()
@@ -36,25 +37,37 @@ class LoginViewController: UIViewController {
     }
     
     
-    @IBAction func ResetPass(_ sender: Any) {
-    }
+    
     
     @IBAction func Signin(_ sender: Any) {
-        login.Signin(Email: emailtext.text!, Password: passwordtext.text!) {(success, reponse) in
+        
+        login.SigninParent(Email: emailtext.text!, Password: passwordtext.text!) {(success, reponse) in
             if success {
                 self.theparent = reponse as! Parent
-                if UserDefaults.standard.string(forKey: "parentRole")! == "parent"{
-                    self.performSegue(withIdentifier: "ParentsigninSegue", sender: nil)}
-                else {self.performSegue(withIdentifier: "KidsigninSegue", sender: nil)}
-                
+                self.performSegue(withIdentifier: "ParentsigninSegue", sender: nil)
             } else {
                 let alert = UIAlertController(title: "error", message: "error occured", preferredStyle: .alert)
-                let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+                let action = UIAlertAction(title: "retry", style: .default, handler: nil)
                 alert.addAction(action)
                 self.present(alert, animated: true)
             }
         }
     }
+    @IBAction func Signinkid(_ sender: Any) {
+        
+        KidloginViewModel().SigninKid(Email: emailtext.text!, Password: passwordtext.text!) { (success, reponse) in
+            if success {
+                self.thekid = reponse as! kid
+                self.performSegue(withIdentifier: "KidsigninSegue", sender: nil)
+            } else {
+                let alert = UIAlertController(title: "error", message: "error occured", preferredStyle: .alert)
+                let action = UIAlertAction(title: "retry", style: .default, handler: nil)
+                alert.addAction(action)
+                self.present(alert, animated: true)
+            }
+        }
+    }
+    
     @objc func googleSignIn() {
         
         

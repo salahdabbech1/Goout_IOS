@@ -8,7 +8,19 @@
 import UIKit
 
 class ActivitiesTableViewController: UITableViewController {
-
+    var Tasks: [task] = []
+    override func viewDidAppear(_ animated: Bool) {
+        TasklistViewModel().GetTasksKid( completed: { success, tasksfromrep in
+            if success{
+                self.Tasks = tasksfromrep!
+                self.tableView.reloadWithAnimation()
+                
+            
+        
+            }
+        })
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,23 +35,30 @@ class ActivitiesTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return Tasks.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "KidtaskCell", for: indexPath)
+        let cv = cell.contentView
+        let namelabel = cv.viewWithTag(1) as! UILabel
+        let desclabel = cv.viewWithTag(2) as! UILabel
+        namelabel.text = Tasks[indexPath.row].Name
+        desclabel.text = Tasks[indexPath.row].Description
+        
+        
 
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
