@@ -8,14 +8,32 @@
 import UIKit
 
 class ChangePassViewController: UIViewController {
-
+    var email: String?
+    @IBOutlet weak var newpasstext: UITextField!
+    @IBOutlet weak var confirmpasstext: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func change(_ sender: Any) {
+        LoginViewModel().changerMotDePasse(email: email!, nouveauMotDePasse: newpasstext.text!) { success in
+            if success{
+                let alert = UIAlertController(title: "success", message: "change password", preferredStyle: .alert)
+                 let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+                 alert.addAction(action)
+                 self.present(alert, animated: true)
+                
+            }else{
+                let alert = UIAlertController(title: "error", message: "an error occured", preferredStyle: .alert)
+                 let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+                 alert.addAction(action)
+                 self.present(alert, animated: true)
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -82,7 +82,7 @@ class LoginViewModel: ObservableObject{
     }
     
     func changerMotDePasse(email: String, nouveauMotDePasse: String, completed: @escaping (Bool) -> Void) {
-        AF.request( "utilisateur/changerMotDePasse",
+        AF.request( "http://localhost:3000/Parent/changepass",
                    method: .put,
                    parameters: ["Email": email,"nouveauMotDePasse": nouveauMotDePasse])
             .validate(statusCode: 200..<300)

@@ -18,8 +18,8 @@
 		4E936C2E276810C400A40F73 /* KidlistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E936C2D276810C400A40F73 /* KidlistViewModel.swift */; };
 		4E9ABC09277F50630044DAE0 /* KidloginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9ABC08277F50630044DAE0 /* KidloginViewModel.swift */; };
 		4E9ABC0B278080500044DAE0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9ABC0A278080500044DAE0 /* SettingsViewController.swift */; };
+		4E9ABC0D2780AAF30044DAE0 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9ABC0C2780AAF30044DAE0 /* ConfirmationViewController.swift */; };
 		4EF1C355277E48A300975CEF /* PassforgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1C354277E48A300975CEF /* PassforgetViewController.swift */; };
-		4EF1C357277E48C200975CEF /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1C356277E48C200975CEF /* ConfirmationViewController.swift */; };
 		4EF1C359277E48D200975CEF /* ChangePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1C358277E48D200975CEF /* ChangePassViewController.swift */; };
 		4EF1C35B277EF74D00975CEF /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1C35A277EF74D00975CEF /* TaskListViewController.swift */; };
 		4EF1C35D277EFC9C00975CEF /* TasklistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1C35C277EFC9C00975CEF /* TasklistViewModel.swift */; };
@@ -53,10 +53,10 @@
 		4E936C2D276810C400A40F73 /* KidlistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidlistViewModel.swift; sourceTree = "<group>"; };
 		4E9ABC08277F50630044DAE0 /* KidloginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidloginViewModel.swift; sourceTree = "<group>"; };
 		4E9ABC0A278080500044DAE0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4E9ABC0C2780AAF30044DAE0 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 		4EEBD2D5277DE25000F313A7 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		4EEBD2D6277DE25000F313A7 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		4EF1C354277E48A300975CEF /* PassforgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassforgetViewController.swift; sourceTree = "<group>"; };
-		4EF1C356277E48C200975CEF /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 		4EF1C358277E48D200975CEF /* ChangePassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassViewController.swift; sourceTree = "<group>"; };
 		4EF1C35A277EF74D00975CEF /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		4EF1C35C277EFC9C00975CEF /* TasklistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasklistViewModel.swift; sourceTree = "<group>"; };
@@ -161,10 +161,10 @@
 				9EAB3773274F86A200CEFA04 /* kidsTableViewController.swift */,
 				9EAB3789274F93A900CEFA04 /* AddTaskViewController.swift */,
 				4EF1C354277E48A300975CEF /* PassforgetViewController.swift */,
-				4EF1C356277E48C200975CEF /* ConfirmationViewController.swift */,
 				4EF1C358277E48D200975CEF /* ChangePassViewController.swift */,
 				4EF1C35A277EF74D00975CEF /* TaskListViewController.swift */,
 				4E9ABC0A278080500044DAE0 /* SettingsViewController.swift */,
+				4E9ABC0C2780AAF30044DAE0 /* ConfirmationViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -315,7 +315,6 @@
 				4E9ABC09277F50630044DAE0 /* KidloginViewModel.swift in Sources */,
 				9EAB376E274F845900CEFA04 /* TrackingViewController.swift in Sources */,
 				4E936C2E276810C400A40F73 /* KidlistViewModel.swift in Sources */,
-				4EF1C357277E48C200975CEF /* ConfirmationViewController.swift in Sources */,
 				3C7E9E00273E5E58009794EE /* ViewController.swift in Sources */,
 				4E9ABC0B278080500044DAE0 /* SettingsViewController.swift in Sources */,
 				9E6A7E952750E9260062AF1F /* LoginViewModel.swift in Sources */,
@@ -333,6 +332,7 @@
 				4EF1C359277E48D200975CEF /* ChangePassViewController.swift in Sources */,
 				9EAB377C274F877A00CEFA04 /* LoginViewController.swift in Sources */,
 				4EF1C35F277EFCC700975CEF /* Task.swift in Sources */,
+				4E9ABC0D2780AAF30044DAE0 /* ConfirmationViewController.swift in Sources */,
 				3C7E9DFE273E5E58009794EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

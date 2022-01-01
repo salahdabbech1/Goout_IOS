@@ -60,8 +60,10 @@ class PassforgetViewController: UIViewController {
             if success {
                 self.performSegue(withIdentifier: "confirmationSegue", sender: self.data)
             } else {
-                //self.present(Alert.makeAlert(titre: "Erreur", message: "Email innexistant"), animated: true)
-            }
+                let alert = UIAlertController(title: "Non existant", message: "this email doesnt exist", preferredStyle: .alert)
+                 let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+                 alert.addAction(action)
+                 self.present(alert, animated: true)            }
         }
     }
         

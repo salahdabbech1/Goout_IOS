@@ -2,7 +2,7 @@
 //  ConfirmationViewController.swift
 //  Goout_IOS
 //
-//  Created by SalahDabbech on 30/12/2021.
+//  Created by SalahDabbech on 1/1/2022.
 //
 
 import UIKit
@@ -11,31 +11,21 @@ class ConfirmationViewController: UIViewController {
     var data : PassforgetViewController.MotDePasseOublieData?
     var compteur: Int?
     var compteurTimer : Timer?
-    
-    //WIDGET
-    
-    @IBOutlet weak var code: UITextField!
-    
-    @IBOutlet weak var confirmationnext: UIButton!
-    @IBOutlet weak var compteurLabel: UILabel!
-    //PROTOCLE
-    // LIFECYCLE
-
+    @IBOutlet weak var codeTextField: UITextField!
+    @IBOutlet weak var compteurExpirationLabel: UILabel!
+    @IBOutlet weak var buttonSend: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        compteurLabel.text = "60"
+        compteurExpirationLabel.text = "60"
         compteur = 60
         startTimer()
-
-    
+        // Do any additional setup after loading the view.
     }
-    override func viewDidDisappear(_ animated: Bool) {
-        stopTimer()
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! ChangePassViewController
+        destination.email = data?.email
     }
     
-    // METHODS
     func startTimer () {
         guard compteurTimer == nil else { return }
         
@@ -51,37 +41,42 @@ class ConfirmationViewController: UIViewController {
         compteurTimer?.invalidate()
         compteurTimer = nil
     }
-    
-    @objc func update()  {
+
+    @objc
+    func update()  {
         if (compteur! > 0){
             compteur! -= 1
-            compteurLabel.text = String(compteur!)
+            compteurExpirationLabel.text = String(compteur!)
         } else {
             stopTimer()
-            confirmationnext.isEnabled = false
-            code.isUserInteractionEnabled = false
-            compteurLabel.textColor = .darkGray
-            //self.present(Alert.makeAlert(titre: "Avertissement", message: "Le code a exprié veuillez recommencer"), animated: true)
+            buttonSend.isEnabled = false
+            codeTextField.isUserInteractionEnabled = false
+            compteurExpirationLabel.textColor = .darkGray
+           let alert = UIAlertController(title: "time out", message: "error", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(action)
+            self.present(alert, animated: true)
         }
-        
-        
-        //Action
-        
     }
-    @IBAction func nextconfirmation(_ sender: Any) {
-        if (code.text!.isEmpty){
-            //self.present(Alert.makeAlert(titre: "Avertissement", message: "Veuillez taper le code"), animated: true)
-            return
+
+    @IBAction func next(_ sender: Any) {
+        if (codeTextField.text!.isEmpty){
+            let alert = UIAlertController(title: "Code", message: "please insert code", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(action)
+            self.present(alert, animated: true)
         }
         
-        if (code.text == data?.code ) {
+        if (codeTextField.text == data?.code ) {
             self.performSegue(withIdentifier: "changerMdpSegue", sender: data?.email)
         } else {
-            //self.present(Alert.makeAlert(titre: "Erreur", message: "Code incorrect"), animated: true)
+            let alert = UIAlertController(title: "Code", message: "Wrong code", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(action)
+            self.present(alert, animated: true)
         }
     }
     }
-    
     /*
     // MARK: - Navigation
 
@@ -91,7 +86,5 @@ class ConfirmationViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-
 
 
