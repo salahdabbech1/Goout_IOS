@@ -988,6 +988,7 @@
                     <connections>
                         <outlet property="confirmpasstext" destination="acQ-p4-Gc2" id="qIP-5c-LaX"/>
                         <outlet property="newpasstext" destination="9yU-79-nFx" id="nf5-kK-Lic"/>
+                        <segue destination="QG8-i0-Rwa" kind="presentation" identifier="changedSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="7i8-Xu-Pir"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ipL-T0-A4o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1018,6 +1019,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="PvH-Is-LGg"/>
+        <segue reference="7i8-Xu-Pir"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name=" Logo" width="250" height="250"/>

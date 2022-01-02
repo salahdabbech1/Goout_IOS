@@ -84,7 +84,8 @@ class LoginViewModel: ObservableObject{
     func changerMotDePasse(email: String, nouveauMotDePasse: String, completed: @escaping (Bool) -> Void) {
         AF.request( "http://localhost:3000/Parent/changepass",
                    method: .put,
-                   parameters: ["Email": email,"nouveauMotDePasse": nouveauMotDePasse])
+                   parameters: ["Email": email,"nouveauMotDePasse": nouveauMotDePasse],
+                    encoding: JSONEncoding.default)
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json"])
             .responseData { response in
