@@ -9,5 +9,6 @@ target 'Goout_IOS' do
  pod 'Alamofire' 
 pod 'SwiftyJSON', '~> 4.0'
 pod 'GoogleSignIn'
+pod 'AppCenter'
 end
 
