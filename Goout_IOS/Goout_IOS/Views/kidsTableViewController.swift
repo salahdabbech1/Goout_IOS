@@ -45,7 +45,7 @@ class kidsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "kidscell")
         let cv = cell?.contentView
         let name =  cv?.viewWithTag(2) as! UILabel
-        let progress = cv?.viewWithTag(3) as! UIProgressView
+        _ = cv?.viewWithTag(3) as! UIProgressView
         name.text = Kids[indexPath.row].Name
         
         

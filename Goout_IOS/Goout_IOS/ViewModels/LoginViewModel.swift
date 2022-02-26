@@ -14,7 +14,7 @@ import CloudKit
 
 class LoginViewModel: ObservableObject{
     func SigninParent(Email: String, Password: String, completed: @escaping (Bool, Any?) -> Void) {
-        AF.request("http://localhost:3000/Parent/Loginparent",
+        AF.request("https://whispering-badlands-86315.herokuapp.com/Parent/Loginparent",
                    method: .post,
                    parameters: ["Email": Email, "Password": Password], encoding: JSONEncoding.default)
             .validate(statusCode: 200..<300)
@@ -40,7 +40,7 @@ class LoginViewModel: ObservableObject{
         
     }
     func loginWithSocialApp(Email: String, Name: String, completed: @escaping (Bool, Parent?) -> Void ) {
-            AF.request("http://localhost:3000/Parent/LoginwithSocial",
+            AF.request("https://whispering-badlands-86315.herokuapp.com/Parent/LoginwithSocial",
                        method: .post,
                        parameters: ["Email": Email, "Name": Name],
                        encoding: JSONEncoding.default)
@@ -63,7 +63,7 @@ class LoginViewModel: ObservableObject{
                 }
         }
     func motDePasseOublie(Email: String, codeDeReinit: String, completed: @escaping (Bool) -> Void) {
-        AF.request("http://localhost:3000/Parent/passforget",
+        AF.request("https://whispering-badlands-86315.herokuapp.com/Parent/passforget",
                    method: .post,
                    parameters: ["Email": Email, "codeDeReinit": codeDeReinit],
                    encoding: JSONEncoding.default)
@@ -82,7 +82,7 @@ class LoginViewModel: ObservableObject{
     }
     
     func changerMotDePasse(email: String, nouveauMotDePasse: String, completed: @escaping (Bool) -> Void) {
-        AF.request( "http://localhost:3000/Parent/changepass",
+        AF.request( "https://whispering-badlands-86315.herokuapp.com/Parent/changepass",
                    method: .put,
                    parameters: ["Email": email,"nouveauMotDePasse": nouveauMotDePasse],
                     encoding: JSONEncoding.default)

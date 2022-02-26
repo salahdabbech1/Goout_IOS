@@ -10,7 +10,7 @@ import Alamofire
 import SwiftyJSON
 class TasklistViewModel: UIViewController {
     func GetTasks(Kidid:String?,completed: @escaping (Bool, [task]?) -> Void){
-        AF.request("http://localhost:3000/Parent/"+Kidid!+"/gettasks",method: .get)
+        AF.request("https://whispering-badlands-86315.herokuapp.com/Parent/"+Kidid!+"/gettasks",method: .get)
                  .validate(statusCode: 200..<300)
                              .validate(contentType: ["application/json"])
                              .responseData { response in
@@ -30,7 +30,7 @@ class TasklistViewModel: UIViewController {
                              }.resume()
                      }
     func GetTasksKid(completed: @escaping (Bool, [task]?) -> Void){
-        AF.request("http://localhost:3000/Parent/"+UserDefaults.standard.string(forKey: "id")!+"/gettasks",method: .get)
+        AF.request("hhttps://whispering-badlands-86315.herokuapp.com/Parent/"+UserDefaults.standard.string(forKey: "id")!+"/gettasks",method: .get)
                  .validate(statusCode: 200..<300)
                              .validate(contentType: ["application/json"])
                              .responseData { response in

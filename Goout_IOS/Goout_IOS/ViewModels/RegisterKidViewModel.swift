@@ -9,7 +9,7 @@ import UIKit
 import Alamofire
 class RegisterKidViewModel: UIViewController {
     func RegisterKid(Kid: kid, completed: @escaping (Bool) -> Void) {
-        AF.request("http://localhost:3000/Parent/"+UserDefaults.standard.string(forKey: "id")!+"/RegisterKids",
+        AF.request("https://whispering-badlands-86315.herokuapp.com/Parent/"+UserDefaults.standard.string(forKey: "id")!+"/RegisterKids",
                    method: .post,
                    parameters: [
                     "Name": Kid.Name!,

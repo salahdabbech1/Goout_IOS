@@ -10,7 +10,7 @@ import Alamofire
 import SwiftyJSON
 class AddTaskViewModel: UIViewController {
     func addTask(Task: task,Kidid:String?, completed: @escaping (Bool) -> Void) {
-        AF.request("http://localhost:3000/Parent/"+Kidid!+"/addtask",
+        AF.request("https://whispering-badlands-86315.herokuapp.com/Parent/"+Kidid!+"/addtask",
                    method: .post,
                    parameters: [
                     "Name": Task.Name!,

@@ -9,7 +9,7 @@ import UIKit
 import Alamofire
 class RegisterParentViewModel: UIViewController {
     func RegisterParent(Parent: Parent, completed: @escaping (Bool) -> Void) {
-        AF.request("http://localhost:3000/Parent/RegisterParent",
+        AF.request("https://whispering-badlands-86315.herokuapp.com/Parent/RegisterParent",
                    method: .post,
                    parameters: [
                     "Name": Parent.Name!,

@@ -51,6 +51,7 @@
 		3C7E9E0A273E5E60009794EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C7E9E0C273E5E60009794EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E936C2D276810C400A40F73 /* KidlistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidlistViewModel.swift; sourceTree = "<group>"; };
+		4E9600F527CA7B2F00837261 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		4E9ABC08277F50630044DAE0 /* KidloginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidloginViewModel.swift; sourceTree = "<group>"; };
 		4E9ABC0A278080500044DAE0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		4E9ABC0C2780AAF30044DAE0 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
@@ -158,11 +159,11 @@
 				9EAB3777274F870F00CEFA04 /* RegistreKidViewController.swift */,
 				9EAB376D274F845900CEFA04 /* TrackingViewController.swift */,
 				9EAB3775274F86DB00CEFA04 /* ActivitiesTableViewController.swift */,
-				9EAB3773274F86A200CEFA04 /* kidsTableViewController.swift */,
 				9EAB3789274F93A900CEFA04 /* AddTaskViewController.swift */,
 				4EF1C354277E48A300975CEF /* PassforgetViewController.swift */,
 				4EF1C358277E48D200975CEF /* ChangePassViewController.swift */,
 				4EF1C35A277EF74D00975CEF /* TaskListViewController.swift */,
+				9EAB3773274F86A200CEFA04 /* kidsTableViewController.swift */,
 				4E9ABC0A278080500044DAE0 /* SettingsViewController.swift */,
 				4E9ABC0C2780AAF30044DAE0 /* ConfirmationViewController.swift */,
 			);
@@ -345,6 +346,7 @@
 			children = (
 				3C7E9E02273E5E58009794EE /* Base */,
 				4EEBD2D5277DE25000F313A7 /* fr */,
+				4E9600F527CA7B2F00837261 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

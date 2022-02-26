@@ -10,7 +10,7 @@ import Alamofire
 import SwiftyJSON
 class KidloginViewModel: ObservableObject {
     func SigninKid(Email: String, Password: String, completed: @escaping (Bool, Any?) -> Void) {
-        AF.request("http://localhost:3000/Parent/Loginkid",
+        AF.request("https://whispering-badlands-86315.herokuapp.com/Parent/Loginkid",
                    method: .post,
                    parameters: ["Email": Email, "Password": Password], encoding: JSONEncoding.default)
             .validate(statusCode: 200..<300)
